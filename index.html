@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>UI</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+  </head>
+  
+  <body>
+    <section data-state="default" id="container" class="container">
+      
+      <div class="wrap default-wrap">
+        <h2>Перетащите файлы<br>в это окно или нажмите</h2>
+        <div class="select-files-wrap">
+          <input class="select-files" type="file" multiple accept="image/*" name="file">
+          <input class="select-files-bttn" type="button" value="Выбрать файлы">
+        </div>     
+      </div>
+              
+      
+      <div class="wrap uploader-wrap">
+        <h2>Загружаю файлы</h2>
+        <div class="loader">
+          <p>80%</p>
+          <hr>
+        </div>
+        <div class="log">
+          <p class="log__status log__status_ok">photo-with-very-very-long-name.jpg</p>
+          <p class="log__status log__status_err">lobster-type-with-very-long-name-cause-why-not.ttf</p>
+          <p class="log__status log__status_current">logo.png</p>
+          <p class="log__status log__status_ok">photo-with-very-very-long-name.jpg</p>
+          <p class="log__status log__status_err">lobster-type-with-very-long-name-cause-why-not.ttf</p>
+          <p class="log__status log__status_current">logo.png</p>
+          <p class="log__status log__status_ok">photo-with-very-very-long-name.jpg</p>
+          <p class="log__status log__status_err">lobster-type-with-very-long-name-cause-why-not.ttf</p>
+          <p class="log__status log__status_current">logo.png</p>
+          <p class="log__status log__status_ok">photo-with-very-very-long-name.jpg</p>
+          <p class="log__status log__status_err">lobster-type-with-very-long-name-cause-why-not.ttf</p>
+          <p class="log__status log__status_current">logo.png</p>
+          <p class="log__status log__status_ok">photo-with-very-very-long-name.jpg</p>
+          <p class="log__status log__status_err">lobster-type-with-very-long-name-cause-why-not.ttf</p>
+          <p class="log__status log__status_current">logo.png</p>          
+        </div>
+      </div>
+      
+      <div class="wrap loaded-wrap">
+        <h2>Файлы успешно загружены</h2>
+        <p class="loaded-subtitle">Теперь вы можете скопировать ссылки на них и использовать в своей работе.</p>
+        
+        <div class="result">
+          <div class="result-row">
+            <div class="result-prw"><img src="./img/prw-b.jpg"></div>
+            <div class="result-desc">
+              <input class="list-table__link-input" type="text" value="http://ntlgy.pic/pic-with-long-name-cause-why-not.jpg">
+              <input class="list-table__copy-input" type="button" value="Копировать ссылку">
+              <input class="list-table__del-input" type="button" value="Удалить изображение">
+            </div>
+          </div>
+          <div class="result-row">
+            <div class="result-prw"><img src="./img/prw-b.jpg"></div>
+            <div class="result-desc">
+              <input class="list-table__link-input" type="text" value="http://ntlgy.pic/pic-with-long-name-cause-why-not.jpg">
+              <input class="list-table__copy-input" type="button" value="Копировать ссылку">
+              <input class="list-table__del-input" type="button" value="Удалить изображение">
+            </div>
+          </div>          
+        </div>
+        
+        <div class="select-files-wrap">
+          <input class="select-files" type="file" multiple>
+          <input class="select-files-bttn" type="button" value="Загрузить ещё">
+        </div>
+      </div>      
+      
+      <div class="wrap list-wrap">
+        <h2>Список загруженных файлов</h2>
+        
+        <div class="list-table-wrap">
+          <table class="list-table">
+            <tr class="list-table__tr">
+              <td class="list-table__date">
+                05-12-2017
+              </td>
+              <td class="list-table__prw">
+                <img class="list-table__img" src="./img/prw.jpg">
+              </td>
+              <td class="list-table__link">
+                <input class="list-table__link-input" type="text" value="http://ntlgy.pic/pic-with-long-name-cause-why-not.jpg">
+              </td>
+              <td class="list-table__copy">
+                <input class="list-table__copy-input" type="button" value="Копировать ссылку">
+              </td>
+              <td class="list-table__del">
+                <input class="list-table__del-input" type="button">
+              </td>
+            </tr>
+            <tr class="list-table__tr">
+              <td class="list-table__date">
+                05-12-2017
+              </td>
+              <td class="list-table__prw">
+                <img class="list-table__img" src="./img/prw.jpg">
+              </td>
+              <td class="list-table__link">
+                <input class="list-table__link-input" type="text" value="http://ntlgy.pic/logo3.jpg">
+              </td>
+              <td class="list-table__copy">
+                <input class="list-table__copy-input" type="button" value="Копировать ссылку">
+              </td>
+              <td class="list-table__del">
+                <input class="list-table__del-input" type="button">
+              </td>
+            </tr>
+            <tr class="list-table__tr">
+              <td class="list-table__date">
+                05-12-2017
+              </td>
+              <td class="list-table__prw">
+                <img class="list-table__img" src="./img/prw.jpg">
+              </td>
+              <td class="list-table__link">
+                <input class="list-table__link-input" type="text" value="http://ntlgy.pic/icons-sprite.jpg">
+              </td>
+              <td class="list-table__copy">
+                <input class="list-table__copy-input" type="button" value="Копировать ссылку">
+              </td>
+              <td class="list-table__del">
+                <input class="list-table__del-input" type="button">
+              </td>
+            </tr>           
+          </table>
+        </div>
+        
+        <div class="select-files-wrap">
+          <input class="select-files" type="file" multiple>
+          <input class="select-files-bttn" type="button" value="Загрузить ещё">
+        </div>
+        
+      </div>      
+      <a id="list" class="file-list" href="">Список загруженных файлов</a>
+    </section>
+    
+    <a href="https://netology.ru/" class="logo"></a>
+    
+    <script src="js/script.js"></script>
+    
+  </body>
+  
+</html>
